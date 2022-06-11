@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Koulen', Courier, monospace;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(48, 48, 48);
+}
+
+.logo {
+    height: 1.8rem;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.links {
+    display: inline-flex;
+    gap: 0.9rem;
+    justify-content: space-around;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover {
+    color: yellow;
+}
+
+.video-contain{
+    background-color: black;
+    width: 100vw;
+}
+.video {
+    max-width: 85vw;
+    margin: auto;
+}
+.text-contain {
+    color: white;
+    background: black;
+}
+
+.text-contain h2 {
+    font-size: 3rem;
+}
+
+.text-contain p {
+    color: yellow;
+}
+
+
+.btn a {
+    position: relative;
+    font-size: 1;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    border-radius: 4px;
+    color: black;
+    transition: 1s;
+}
+
+.btn a:hover {
+    background-color: white;
+}
+
+.intro {
+    background: black;
+}
+.intro h2 {
+    position: relative;
+    top: 1.2rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.intro p {
+    color: yellow;
+}
+
+.card-contain img{
+    width: 5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.card-contain {
+    
+    border: 0.1rem solid white;
+    background: black;
+    padding: 10px 0 3rem 0;
+    
+}
+
+.addy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.socials img{
+    width: 1rem;
+}
+
+.footere {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    background: black;
+    padding: 2%;
+    align-items: center;
+}
+
+.footere p {
+    color: white;
+    font-size: 0.5rem;
+}
+
+@media (min-width: 525px) {
+    .links {
+        justify-content: space-around;
+        margin-top: 1%;
+    }
+
+    
+    .logo {
+        height: 2.5rem;
+    }
+
+    .card-contain img{
+        width: 5rem;
+        background-color: white;
+        border-radius: 50%;
+    }
+    
+    .card-contain {
+        padding: 1rem;
+        border: 0.1rem solid white;
+        background: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bid {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bid > * {
+        display: flex;
+        flex-basis: 100%;
+    }
+
+    .socials img {
+        width: 2rem;
+    }
+
+    .footere p {
+        font-size: 1rem;
+    }
+
+    .btn a {
+        padding: 0px 10px 0 10px;
+        font-size: 20px;
+    }
+}
